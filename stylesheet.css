@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset some default styles for consistency across browsers */
 body, h1, p, a, input, button {
     margin: 0;
     padding: 0;
@@ -9,111 +9,110 @@ body, h1, p, a, input, button {
 footer {
     background-color: #659f8f; /* Light background color */
     color: #313131; /* Dark text color */
-    padding: 20px 0;
+    padding: 20px 0; /* Vertical padding for the footer */
 }
 
 /* Responsive container for centering content */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Horizontal padding inside the container */
 }
 
 /* Grid styling for footer layout */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-    gap: 20px;
+    gap: 20px; /* Space between grid items */
 }
 
-/* Styles for heading */
+/* Styles for heading (h1) inside the footer */
 h1 {
-    font-size: 1.5rem;
-    color: black;
+    font-size: 1.5rem; /* Font size of 1.5rem */
+    color: black; /* Black text color */
 }
 
-/* Styles for input field */
+/* Styles for the input field in the newsletter subscription */
 input[type="text"] {
-    padding: 10px;
-    border: 1px solid #2a6fbd; /* Border color */
+    padding: 10px; /* Padding inside the input field */
+    border: 1px solid #2a6fbd; /* Blue border color */
     border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
-    width: 200px; /* Adjusted width */
-    height: 40px;
-    margin-right: 10px;
+    width: 200px; /* Fixed width for the input */
+    height: 40px; /* Fixed height for the input */
+    margin-right: 10px; /* Margin to the right of the input */
 }
 
-/* Styles for subscribe button */
+/* Styles for the subscribe button */
 button {
-    background-color: white;
-    color: #313131;
+    background-color: white; /* White background color */
+    color: #313131; /* Dark text color */
     border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
     width: 100px; /* Fixed width for the button */
-    height: 40px;
-
+    height: 40px; /* Fixed height for the button */
 }
 
-/* Hover effect for the button */
+/* Hover effect for the subscribe button */
 button:hover {
-    background-color: #d86943;
-    color: white;
+    background-color: #d86943; /* Change background color on hover */
+    color: white; /* Change text color on hover */
 }
 
 /* Quick Links and Technologies section styling */
 p {
-    font-weight: bold;
-    color: #313131;
-    margin-bottom: 10px;
+    font-weight: bold; /* Bold text */
+    color: #313131; /* Dark text color */
+    margin-bottom: 10px; /* Space below the paragraph */
 }
 
 /* Styles for links inside the footer */
 .flex a {
-    color: white;
-    text-decoration: none; /* Remove underline */
-    margin-right: 10px;
-    transition: color 0.3s ease; /* Smooth transition on hover */
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 10px; /* Space between links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 /* Hover effect for the links */
 .flex a:hover {
-    color: #d86943;
+    color: #d86943; /* Change link color on hover */
 }
 
-/* Style for the hr line */
+/* Style for the horizontal line (hr) */
 hr {
-    border: 1px solid #d86943;
-    margin: 20px 0;
+    border: 1px solid #d86943; /* Red-orange color for the border */
+    margin: 20px 0; /* Vertical space around the line */
 }
 
-/* Style for the logo */
+/* Style for the logo image */
 img {
-    width: 150px;
-    transition: opacity 0.3s ease; /* Smooth transition on hover */
+    width: 150px; /* Fixed width for the logo */
+    transition: opacity 0.3s ease; /* Smooth opacity transition on hover */
 }
 
 /* Hover effect for the image */
 img:hover {
-    opacity: 0.8;
+    opacity: 0.8; /* Slightly fade the image on hover */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-    /* Change the grid layout to a single column, so each section stacks vertically */
+    /* Change the grid layout to a single column for smaller screens */
     .grid {
         grid-template-columns: 1fr; /* Single column layout */
     }
     
-    /* Make the input field full width and round its corners, so it fits well in the smaller layout */
+    /* Make the input field full width on smaller screens */
     input[type="text"] {
-        width: 100%; /* Full width input on smaller screens */
+        width: 100%; /* Full width input */
         border-radius: 5px; /* Rounded corners on all sides */
     }
     
     /* Adjust the button styling to match the input field on smaller screens */
     button {
-        margin-top: 10px;
-        border-radius: 5px;
+        margin-top: 10px; /* Space above the button */
+        border-radius: 5px; /* Rounded corners on all sides */
         width: 100%; /* Full width button */
     }
 }

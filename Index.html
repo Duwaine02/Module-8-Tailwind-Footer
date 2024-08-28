@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
     <title>Footer Example</title>
+    
+    <!-- Tailwind CSS from CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link to external stylesheet -->
     <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
+    <!-- Start of the footer section -->
     <footer class="bg-[#659f8f] dark:bg-[#313131]">
+        <!-- Container to center content and add padding -->
         <div class="container mx-auto px-4">
-            <footer class="bg-[#659f8f] dark:bg-[#313131]">
+            
+            <!-- Start of the grid layout within the footer -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Newsletter Subscription -->
+                
+                <!-- Newsletter Subscription Section -->
                 <div>
+                    <!-- Heading for the subscription form -->
                     <h1 class="text-xl font-bold mb-4">Subscribe to our Newsletter for Updates.</h1>
+                    
+                    <!-- Input field and button for email subscription -->
                     <div class="flex space-x-2">
+                        <!-- Email input field with rounded corners and full width -->
                         <input id="email" type="email" placeholder="Enter your email" class="px-4 py-2 rounded-md text-gray-900 w-full">
+                        <!-- Subscribe button with hover effect and transition -->
                         <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-orange-500 transition-colors duration-300">Subscribe</button>
                     </div>
                 </div>
 
-                <!-- Quick Links -->
+                <!-- Quick Links Section -->
                 <div>
+                    <!-- Heading for quick links -->
                     <p class="text-lg font-semibold mb-2">Quick Links</p>
+                    
+                    <!-- List of links with hover effect -->
                     <div class="flex flex-col space-y-2">
                         <a href="https://www.codespace.co.za/programs" class="text-gray-400 hover:text-white">Home</a>
                         <a href="https://www.codespace.co.za/about/" class="text-gray-400 hover:text-white">Who We Are</a>
@@ -31,9 +50,12 @@
                     </div>
                 </div>
 
-                <!-- Technologies -->
+                <!-- Technologies Section -->
                 <div>
+                    <!-- Heading for technologies links -->
                     <p class="text-lg font-semibold mb-2">Technologies</p>
+                    
+                    <!-- List of technology links with hover effect -->
                     <div class="flex flex-col space-y-2">
                         <a href="https://en.wikipedia.org/wiki/HTML" class="text-gray-400 hover:text-white">HTML</a>
                         <a href="https://en.wikipedia.org/wiki/CSS" class="text-gray-400 hover:text-white">CSS</a>
@@ -42,11 +64,12 @@
                 </div>
             </div>
 
-            <!-- Divider -->
+            <!-- Divider line separating content from logo -->
             <hr class="my-6 border-[#d86943]">
 
-            <!-- Logo -->
+            <!-- Logo Section -->
             <div class="text-center">
+                <!-- Link to homepage with centered logo -->
                 <a href="https://www.codespace.co.za/programs">
                     <img class="mx-auto w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="Logo">
                 </a>
