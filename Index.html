@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <footer class="bg-[#659f8f] dark:bg-[#313131]">
+        <div class="container mx-auto px-4">
+            <footer class="bg-[#659f8f] dark:bg-[#313131]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Newsletter Subscription -->
+                <div>
+                    <h1 class="text-xl font-bold mb-4">Subscribe to our Newsletter for Updates.</h1>
+                    <div class="flex space-x-2">
+                        <input id="email" type="email" placeholder="Enter your email" class="px-4 py-2 rounded-md text-gray-900 w-full">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-orange-500 transition-colors duration-300">Subscribe</button>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <p class="text-lg font-semibold mb-2">Quick Links</p>
+                    <div class="flex flex-col space-y-2">
+                        <a href="https://www.codespace.co.za/programs" class="text-gray-400 hover:text-white">Home</a>
+                        <a href="https://www.codespace.co.za/about/" class="text-gray-400 hover:text-white">Who We Are</a>
+                        <a href="https://www.codespace.co.za/programs/software-development/?matchtype=p&device=c&keyword=codspace&adgroupid=78286133238&utm_campaign=6451583985&utm_source=google&utm_medium=cpc&gad_source=1&gclid=Cj0KCQjww5u2BhDeARIsALBuLnMy0nvAhurGp48xH6engii7xUo1sI61vuCW4FStC_6Y8gcgHbz8qeIaAkvLEALw_wcB" class="text-gray-400 hover:text-white">Our Philosophy</a>
+                    </div>
+                </div>
+
+                <!-- Technologies -->
+                <div>
+                    <p class="text-lg font-semibold mb-2">Technologies</p>
+                    <div class="flex flex-col space-y-2">
+                        <a href="https://en.wikipedia.org/wiki/HTML" class="text-gray-400 hover:text-white">HTML</a>
+                        <a href="https://en.wikipedia.org/wiki/CSS" class="text-gray-400 hover:text-white">CSS</a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="text-gray-400 hover:text-white">JavaScript</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="my-6 border-[#d86943]">
+
+            <!-- Logo -->
+            <div class="text-center">
+                <a href="https://www.codespace.co.za/programs">
+                    <img class="mx-auto w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Reset some default styles */
+body, h1, p, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the footer background and padding */
+footer {
+    background-color: #659f8f; /* Light background color */
+    color: #313131; /* Dark text color */
+    padding: 20px 0;
+}
+
+/* Responsive container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid styling for footer layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px;
+}
+
+/* Styles for heading */
+h1 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Styles for input field */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #2a6fbd; /* Border color */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+    width: 200px; /* Adjusted width */
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Styles for subscribe button */
+button {
+    background-color: white;
+    color: #313131;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100px; /* Fixed width for the button */
+    height: 40px;
+
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #d86943;
+    color: white;
+}
+
+/* Quick Links and Technologies section styling */
+p {
+    font-weight: bold;
+    color: #313131;
+    margin-bottom: 10px;
+}
+
+/* Styles for links inside the footer */
+.flex a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the links */
+.flex a:hover {
+    color: #d86943;
+}
+
+/* Style for the hr line */
+hr {
+    border: 1px solid #d86943;
+    margin: 20px 0;
+}
+
+/* Style for the logo */
+img {
+    width: 150px;
+    transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the image */
+img:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Change the grid layout to a single column, so each section stacks vertically */
+    .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+    
+    /* Make the input field full width and round its corners, so it fits well in the smaller layout */
+    input[type="text"] {
+        width: 100%; /* Full width input on smaller screens */
+        border-radius: 5px; /* Rounded corners on all sides */
+    }
+    
+    /* Adjust the button styling to match the input field on smaller screens */
+    button {
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 100%; /* Full width button */
+    }
+}
